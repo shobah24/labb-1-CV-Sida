@@ -1,6 +1,5 @@
 /* allmänt alla sidor: */
 body {
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif'; */
     font-family: "Merriweather", serif;
     margin: 0px;
     padding: 0px;
@@ -226,12 +225,34 @@ footer {
     text-decoration: underline;
 }
 
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.pic-contact img {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin: -1rem -1rem; */
+    /* margin-left: -1rem; */
+}
+
+.contacts .mail {
+    font-size: 2px;
+}
+
 /* css för skräm mindre än 768px */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
-        margin: -2vw;
+        margin: 0vw;
     }
 
     nav ul li {
@@ -245,11 +266,22 @@ footer {
 
     .grid-container {
         grid-template-columns: 1fr;
+        align-items: grid;
     }
 
     .grid-container p {
         font-size: 1rem;
         text-align: center;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container2 img {
+        width: 100%;
+        /* border-radius: 5rem; */
+        margin-top: 1vw;
     }
 
     h2,
@@ -265,12 +297,14 @@ footer {
         font-size: 4vw;
     }
 
-    footer,
-    .button {
+    footer {
         background-color: rgb(51, 96, 118);
+        /* margin-bottom: -7rem; */
+        padding-bottom: 4rem;
     }
 
     .button {
+        background-color: rgb(51, 96, 118);
         padding: 1rem 20vw;
     }
 
@@ -286,6 +320,7 @@ footer {
 
     .footer-container {
         margin-top: 5px;
+        margin-bottom: 0px;
 
     }
 
@@ -323,4 +358,5 @@ footer {
         text-align: center;
         display: block;
     }
+
 }
